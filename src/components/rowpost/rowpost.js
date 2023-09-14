@@ -54,6 +54,7 @@ function Rowpost(props) {
             <h2>{props.title}</h2>
             <div className='posters'>
                 {movies.map((obj) => (
+                    
                     <img
                         onClick={() => handleMovie(obj.id)}
                         className={props.isSmall ? 'smallPoster' : 'poster'}
